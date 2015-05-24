@@ -30,6 +30,11 @@ class FillRepositoryCommand(sublime_plugin.TextCommand):
         self.view.insert(edit, 0, "<?php\nsf_repo");
         self.view.run_command('auto_complete');
 
+class FillTestsCommand(sublime_plugin.TextCommand):
+    def run(self, edit, user_input=None):
+        self.view.insert(edit, 0, "<?php\nsf_tests");
+        self.view.run_command('auto_complete');
+
 class SymfonyComplexListener(sublime_plugin.EventListener):
 
     def on_load(self, view):
@@ -42,6 +47,7 @@ class SymfonyComplexListener(sublime_plugin.EventListener):
         isFormType            = False
         isFormDataTransformer = False
         isRepository          = False
+        isTests               = False
 
         # XML Services - DONE
         if re.compile('services\.xml$').search(fileName):
@@ -89,6 +95,7 @@ class SymfonyComplexListener(sublime_plugin.EventListener):
         # Tests
         if re.compile('\/Tests\/').search(fileName):
             syntax = 'Packages/SymfonyComplex/SymfonyTests.tmLanguage';
+            isTests = True
 
         # TwigExtension
         if re.compile('\/Twig\/').search(fileName) and re.compile('Extension\.php$').search(fileName):
@@ -117,3 +124,6 @@ class SymfonyComplexListener(sublime_plugin.EventListener):
 
         if isRepository:
             view.run_command('fill_repository');
+
+        if isTests:
+            view.run_command('fill_tests');

@@ -1,0 +1,38 @@
+<snippet>
+    <content><![CDATA[
+namespace ${TM_FILEPATH/.+\/([^\/]*)\/([^\/]*)\/([^\/]*)\/([^\/]*)\/([^\/]*)$/${1}\\${2}\\${3}\\${4}/gi};
+
+use Liip\FunctionalTestBundle\Test\WebTestCase;
+use Symfony\Bundle\FrameworkBundle\Client;
+
+class ${1:${TM_FILENAME/\.php//gi}} extends WebTestCase
+\{
+    /**
+     * @var Client
+     */
+    protected \$client;
+
+    protected function setUp()
+    \{
+        \$classes = [
+            $2
+        ];
+
+        \$this->loadFixtures(\$classes);
+
+        \$this->client = parent::makeClient();
+    \}
+
+    public function test${3:Example}()
+    \{
+        \$this->client->request('GET', '${4:/homepage}');
+
+        \$response = \$this->client->getResponse();
+    \}
+\}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sf_tests</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php.symfony.tests</scope>
+</snippet>
