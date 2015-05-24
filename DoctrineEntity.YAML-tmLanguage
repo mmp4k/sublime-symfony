@@ -1,0 +1,11 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: PHP - Doctrine Entity
+scopeName: source.php.doctrine.entity
+fileTypes: [php]
+uuid: 365d68a7-6779-4b57-950a-23c75ededc99
+
+patterns:
+- name: source.php.doctrine.entity.include.php
+  include: source.php
+...

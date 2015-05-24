@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+* @ORM\ManyToOne(targetEntity="${1}")
+* @ORM\JoinColumn(name="${2}", referencedColumnName="${3}")
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sf_manyToOne</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php.doctrine.entity comment.block.documentation.phpdoc.php</scope>
+</snippet>

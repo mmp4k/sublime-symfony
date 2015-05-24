@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[
+namespace ${TM_FILEPATH/.+\/([^\/]*)\/([^\/]*)\/([^\/]*)\/([^\/]*)$/${1}\\${2}\\${3}/gi};
+
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity(${1:repositoryClass="${TM_FILEPATH/.+\/([^\/]*)\/([^\/]*)\/([^\/]*)\/([^\/]*)\.([^\.]*)$/${1}\\${2}\\Repository\\${4}Repository.php/gi}"})
+ * @ORM\Table(name="${3:${TM_FILENAME/([A-Z][a-z]+)/\l$1_\l$2/g}}")
+ */
+class ${4:${TM_FILENAME/\.php//gi}}
+\{
+    /**
+     * @ORM\Id()
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected \$id;${0}
+\}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sf_entity</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php.doctrine.entity</scope>
+</snippet>

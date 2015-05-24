@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>xml</string>
+	</array>
+	<key>name</key>
+	<string>XML - Symfony Routing</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>text.xml</string>
+			<key>name</key>
+			<string>text.xml.symfony.routing.include.xml</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>text.xml.symfony.routing</string>
+	<key>uuid</key>
+	<string>27a54ecd-3997-4489-8039-248aa13773bb</string>
+</dict>
+</plist>

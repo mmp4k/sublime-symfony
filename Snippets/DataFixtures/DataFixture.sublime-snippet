@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+namespace ${TM_FILEPATH/.+\/([^\/]*)\/([^\/]*)\/([^\/]*)\/([^\/]*)\/([^\/]*)$/${1}\\${2}\\${3}\\${4}/gi};
+
+use Doctrine\Common\DataFixtures\AbstractFixture;
+use Doctrine\Common\DataFixtures\Doctrine;
+use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
+use Doctrine\Common\Persistence\ObjectManager;
+
+class ${1:${TM_FILENAME/\.php//gi}} extends AbstractFixture implements OrderedFixtureInterface
+\{
+    public function load(ObjectManager \$manager)
+    \{
+        $0
+    \}
+
+    public function getOrder()
+    \{
+        return ${2:10};
+    \}
+\}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sf_data_fixture</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php.doctrine.data_fixtures</scope>
+</snippet>

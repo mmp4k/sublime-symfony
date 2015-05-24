@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+namespace ${TM_FILEPATH/.+\/([^\/]*)\/([^\/]*)\/([^\/]*)\/([^\/]*)$/${1}\\${2}\\${3}/gi};
+
+use Doctrine\ORM\EntityRepository;
+
+class ${1:${TM_FILENAME/\.php//gi}} implements EntityRepository
+\{
+    public function ${2:findBy}()
+    \{
+        return \$this->createQueryBuilder('${3:t}')$0
+            ->getQuery()
+            ->getResult();
+    \}
+\}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sf_repo</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php.doctrine.repository</scope>
+</snippet>

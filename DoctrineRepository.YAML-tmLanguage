@@ -1,0 +1,11 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: PHP - Doctrine Repository
+scopeName: source.php.doctrine.repository
+fileTypes: [php]
+uuid: a3d3f19d-0139-4d5d-80b8-56e82743f3e7
+
+patterns:
+- name: source.php.doctrine.repository.include.php
+  include: source.php
+...

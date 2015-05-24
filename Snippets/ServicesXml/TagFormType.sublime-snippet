@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+<tag name="form.type" alias="$1" />$0
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sf_tag_form_type</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>text.xml.symfony.services</scope>
+</snippet>

@@ -1,0 +1,11 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: PHP - Symfony Form Data Transformer
+scopeName: source.php.symfony.form.data_transformer
+fileTypes: [php]
+uuid: 33dcdc97-b2ba-4ffd-8485-e559b8d470b3
+
+patterns:
+- name: source.php.symfony.form.data_transformer.include.php
+  include: source.php
+...

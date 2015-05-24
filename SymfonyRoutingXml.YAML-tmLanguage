@@ -1,0 +1,11 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: XML - Symfony Routing
+scopeName: text.xml.symfony.routing
+fileTypes: [xml]
+uuid: 27a54ecd-3997-4489-8039-248aa13773bb
+
+patterns:
+- name: text.xml.symfony.routing.include.xml
+  include: text.xml
+...

@@ -1,0 +1,25 @@
+<snippet>
+    <content><![CDATA[
+namespace ${TM_FILEPATH/.+\/([^\/]*)\/([^\/]*)\/([^\/]*)\/([^\/]*)\/([^\/]*)$/${1}\\${2}\\${3}\\${4}/gi};
+
+use Symfony\Component\Form\DataTransformerInterface;
+use Symfony\Component\Form\Exception\UnexpectedTypeException;
+
+class ${1:${TM_FILENAME/\.php//gi}} implements DataTransformerInterface
+\{
+    public function transform(\$value)
+    \{
+        $0
+    \}
+
+    public function reverseTransform(\$value)
+    \{
+
+    \}
+\}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sf_form</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php.symfony.form.data_transformer</scope>
+</snippet>

@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+/**
+ * @Route("/$1"${2:, name="${3}"})
+ * @Template
+ * @Security("")
+ * @ParamConverter("$4", class="$5")
+ */
+public function ${6:index}Action(Request \$request, ${5/(.+)\:([^:]+)$/$2/ig} \$$4)
+{
+    $7
+    return [
+
+    ];
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sf_action</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php.symfony.controller</scope>
+</snippet>

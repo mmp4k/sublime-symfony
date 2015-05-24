@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+\$form = \$this->createForm(new $1Type(), \$${1/^([a-z])/\l$1/ig});
+\$form->handleRequest(\$request);
+
+if (\$form->isValid()) {
+    $2
+}
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sf_form</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php.symfony.controller</scope>
+</snippet>

@@ -1,0 +1,12 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: PHP - Symfony Controller
+scopeName: source.php.symfony.controller
+fileTypes: [php]
+uuid: 0da65be4-5aac-4b6f-8071-1aadb970b8d9
+
+patterns:
+- name: source.php.symfony.controller.include.php
+  include: source.php
+
+...

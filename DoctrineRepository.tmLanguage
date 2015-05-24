@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>php</string>
+	</array>
+	<key>name</key>
+	<string>PHP - Doctrine Repository</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>source.php</string>
+			<key>name</key>
+			<string>source.php.doctrine.repository.include.php</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.php.doctrine.repository</string>
+	<key>uuid</key>
+	<string>a3d3f19d-0139-4d5d-80b8-56e82743f3e7</string>
+</dict>
+</plist>

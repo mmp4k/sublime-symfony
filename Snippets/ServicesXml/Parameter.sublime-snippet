@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+<parameter key="$1.class">${TM_FILEPATH/.+\/([^\/]*)\/([^\/]*)\/([^\/]*)\/([^\/]*)\/([^\/]*)$/${1}\\${2}/gi}\\$2</parameter>$0
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sf_parameter</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>text.xml.symfony.services</scope>
+</snippet>

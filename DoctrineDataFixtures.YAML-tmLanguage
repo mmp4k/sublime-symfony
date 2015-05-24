@@ -1,0 +1,11 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: PHP - Doctrine Data Fixtures
+scopeName: source.php.doctrine.data_fixtures
+fileTypes: [php]
+uuid: ecebb463-3ddb-4edb-a57e-b837906a7de7
+
+patterns:
+- name: source.php.doctrine.data_fixtures.include.php
+  include: source.php
+...

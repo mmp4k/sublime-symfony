@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+* @ORM\OneToMany(targetEntity="${1}", mappedBy="${2}")
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sf_oneToMany</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php.doctrine.entity comment.block.documentation.phpdoc.php</scope>
+</snippet>

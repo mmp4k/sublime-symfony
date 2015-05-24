@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+* @ORM\ChangeTrackingPolicy("DEFERRED_IMPLICIT|DEFERRED_EXPLICIT|NOTIFY")
+* @ORM\HasLifecycleCallbacks
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sf_orm_entity</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php.doctrine.entity comment.block.documentation.phpdoc.php</scope>
+</snippet>

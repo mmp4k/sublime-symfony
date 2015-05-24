@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>php</string>
+	</array>
+	<key>name</key>
+	<string>PHP - Symfony Form Type</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>source.php</string>
+			<key>name</key>
+			<string>source.php.symfony.form.type.include.php</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.php.symfony.form.type</string>
+	<key>uuid</key>
+	<string>23943c75-9147-44e4-9e6d-cf6932392371</string>
+</dict>
+</plist>

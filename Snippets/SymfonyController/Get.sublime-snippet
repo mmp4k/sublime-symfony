@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+/**
+ * @return $3
+ */
+protected function get$1()
+{
+    return \$this->get('$2');
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sf_get</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php.symfony.controller</scope>
+</snippet>

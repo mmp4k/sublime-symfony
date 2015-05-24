@@ -1,0 +1,11 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: PHP - Symfony Form Type
+scopeName: source.php.symfony.form.type
+fileTypes: [php]
+uuid: 23943c75-9147-44e4-9e6d-cf6932392371
+
+patterns:
+- name: source.php.symfony.form.type.include.php
+  include: source.php
+...

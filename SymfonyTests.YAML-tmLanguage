@@ -1,0 +1,11 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: PHP - Symfony Tests
+scopeName: source.php.symfony.tests
+fileTypes: [php]
+uuid: 96fbe3a3-a41b-4e26-8541-1b97b3fd0328
+
+patterns:
+- name: source.php.symfony.tests.include.php
+  include: source.php
+...

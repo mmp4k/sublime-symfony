@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+<service id="$1.repository"
+         class="%$1.repository.class%"
+         factory-service="doctrine.orm.entity_manager"
+         factory-method="getRepository">
+    <argument>${2:Bundle:Entity}</argument>
+</service>$0
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sf_service_repository</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>text.xml.symfony.services</scope>
+</snippet>

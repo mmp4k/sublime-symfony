@@ -1,0 +1,11 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: XML - Symfony Services
+scopeName: text.xml.symfony.services
+fileTypes: [xml]
+uuid: 222e48e5-a987-422d-a6e1-f3bf857264d4
+
+patterns:
+- name: text.xml.symfony.services.include.xml
+  include: text.xml
+...
